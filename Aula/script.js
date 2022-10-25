@@ -42,3 +42,27 @@ console.log(array.indexOf(true));
 let novoArray = array.slice(0, 2);
 console.log(novoArray);
 
+console.log('---------------------------------------------')
+// o que são objetivos
+let object ={propriedade1: 'valor1', propriedade2: 'valor2'};
+// deve ser declarado entre chaves {}
+console.log(object);
+
+//assim como arrays as propriedades de objetos támbem podem guardar quaisquer valores*/
+let object2 = {
+    string: 'string',
+    number: 1,
+    boolean:true,
+    array: ['array'],
+    objectInterno: {objectoInterno: 'objectInterno'}};
+
+//como acessar propriedades de objetos
+//usando o ponto "."
+console.log(object2.objectInterno);
+
+// desestruturando objeto
+let string = object2.string;
+let number = object2.number;
+let boolean = object2.boolean;  
+
+console.log(string, number, boolean)
